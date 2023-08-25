@@ -167,7 +167,9 @@ namespace App.Server
                                     }
                                     else
                                     {
-                                        //myMethod(result[2]);
+                                        var prodName = result[2];
+                                        prodName = prodName.Remove(0, 1);
+                                        objectResponse = myMethod.Invoke(myInstance, new object[] { prodName,0m });
                                     }
                                 }
                                 else

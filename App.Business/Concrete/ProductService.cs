@@ -53,7 +53,7 @@ namespace App.Business.Concrete
             _productDal.Update(product);
         }
 
-        public List<Product> GetByProductnameOrUnitpriceSearch(string productName, decimal unitprice = 0)
+        public List<Product> GetByProductnameOrUnitpriceSearch(string productName, decimal unitprice = 0m)
         {
             if (unitprice == 0)
             {
